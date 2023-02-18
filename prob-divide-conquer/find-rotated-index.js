@@ -9,12 +9,13 @@
  * Examples:
  * findRotatedIndex([3,4,1,2],4) // 1
  * findRotatedIndex([6, 7, 8, 9, 1, 2, 3, 4], 8) // 2
+ *                             E  S  E
  * findRotatedIndex([37,44,66,102,10,22],14) // -1
  */
 
 function findRotatedIndex(arr, val) {
   let pivot = findPivot(arr);
-  if (pivot > 0 && num >= arr[0] && num <= arr[pivot - 1]) {
+  if (pivot > 0 && val >= arr[0] && val <= arr[pivot - 1]) {
     return binarySearch(arr, val, 0, pivot-1)
   }
   else {
@@ -58,7 +59,7 @@ function binarySearch(arr, val, start, end) {
       start = mid + 1;
     }
     else {
-      start = mid - 1;
+      end = mid - 1;
     }
   }
   return -1;

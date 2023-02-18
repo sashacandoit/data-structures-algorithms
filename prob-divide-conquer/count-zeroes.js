@@ -19,7 +19,7 @@ function findFirstZero(arr, left=0, right=arr.length-1) {
   if (right >= left) {
     let mid = left + Math.floor((right - left) / 2)
     //if mid index is 0 or value of mid index is 0 and left of mid is 1, return first 0 index
-    if (mid === 0 || (arr[mid - 1] === 1 && arr[mid] === 0)) {
+    if ((mid === 0 || arr[mid - 1] === 1) && arr[mid] === 0) {
       return mid;
     }//if value at mid is 1, repeat and move left index to mid + 1
     else if (arr[mid] === 1) {
