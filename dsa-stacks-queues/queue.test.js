@@ -6,7 +6,7 @@ beforeEach(function() {
   queue = new Queue();
 });
 
-describe.only("enqueue", function() {
+describe("enqueue", function() {
   it("places the value at the end of the queue and returns undefined", function() {
     expect(queue.enqueue(10)).toBe(undefined);
     expect(queue.first.val).toBe(10);

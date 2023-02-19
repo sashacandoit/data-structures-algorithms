@@ -37,7 +37,15 @@ class Queue {
    * and return its value. Should throw an error if the queue is empty. */
 
   dequeue() {
+    if (!this.first) throw new Error("Queue is empty");
 
+    let removed = this.first;
+    if (this.first == this.last) {
+      this.last = null;
+    }
+    this.first = this.first.next;
+    this.size--;
+    return removed.val;
   }
 
   /** peek(): return the value of the first node in the queue. */
