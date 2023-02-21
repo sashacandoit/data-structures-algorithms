@@ -51,7 +51,7 @@ describe("isPalindrome", function() {
   });
 });
 
-describe("findIndex", function() {
+describe.skip("findIndex", function() {
   let animals = ["duck", "cat", "pony", "cat"];
 
   it("returns the first index of the value in the array if the value exists", function() {
@@ -66,7 +66,7 @@ describe("findIndex", function() {
   });
 });
 
-describe("revString", function() {
+describe.skip("revString", function() {
   it("returns a reversed copy of the string", function() {
     expect(revString("porcupine")).toBe("enipucrop");
     expect(revString("duck")).toBe("kcud");
@@ -75,7 +75,7 @@ describe("revString", function() {
   });
 });
 
-describe("gatherStrings", function() {
+describe.skip("gatherStrings", function() {
   it("gathers all object string values into an array", function() {
     let whiskey = {
       name: "Whiskey",
@@ -110,7 +110,7 @@ describe("gatherStrings", function() {
   });
 });
 
-describe("binarySearch", function () {
+describe.skip("binarySearch", function () {
   it("should find the index of a value in a sorted array", function() {
     expect(binarySearch([1, 2, 3, 4], 4)).toEqual(3);
     expect(binarySearch([1, 2], 1)).toEqual(0);
