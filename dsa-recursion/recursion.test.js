@@ -75,7 +75,7 @@ describe("revString", function() {
   });
 });
 
-describe.skip("gatherStrings", function() {
+describe("gatherStrings", function() {
   it("gathers all object string values into an array", function() {
     let whiskey = {
       name: "Whiskey",
