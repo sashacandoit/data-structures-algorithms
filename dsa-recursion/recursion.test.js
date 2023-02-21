@@ -51,7 +51,7 @@ describe("isPalindrome", function() {
   });
 });
 
-describe.skip("findIndex", function() {
+describe("findIndex", function() {
   let animals = ["duck", "cat", "pony", "cat"];
 
   it("returns the first index of the value in the array if the value exists", function() {
