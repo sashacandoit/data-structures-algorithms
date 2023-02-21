@@ -48,16 +48,16 @@ function isPalindrome(str, i=0) {
 
 function findIndex(arr, val, i = 0) {
   if (i === arr.length) return -1;
-
   if (arr[i] === val) return i;
-
   return findIndex(arr, val, i + 1);
 }
 
 /** revString: return a copy of a string, but in reverse. */
 
-function revString(str) {
-
+function revString(str, i=str.length-1, newStr="") {
+  if (i < 0) return newStr;
+  newStr += str[i]
+  return revString(str, i - 1, newStr)
 }
 
 /** gatherStrings: given an object, return an array of all of the string values. */

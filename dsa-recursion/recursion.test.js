@@ -66,7 +66,7 @@ describe("findIndex", function() {
   });
 });
 
-describe.skip("revString", function() {
+describe("revString", function() {
   it("returns a reversed copy of the string", function() {
     expect(revString("porcupine")).toBe("enipucrop");
     expect(revString("duck")).toBe("kcud");
