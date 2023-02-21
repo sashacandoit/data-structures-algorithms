@@ -74,8 +74,21 @@ function gatherStrings(objects) {
 /** binarySearch: given a sorted array of numbers, and a value,
  * return the index of that value (or -1 if val is not present). */
 
-function binarySearch(arr, val) {
+function binarySearch(arr, val, left=0, right=arr.length) {
+  if (left > right) return -1;
 
+  let middleIdx = Math.floor((left + right) / 2);
+  let middleVal = arr[middleIdx];
+
+  if (middleVal === val) {
+    return middleIdx;
+  }
+
+  if (middleVal < val) {
+    return binarySearch(arr, val, left = middleIdx+1, right)
+  }
+
+  return binarySearch(arr, val, left, right = middleIdx - 1)
 }
 
 module.exports = {
