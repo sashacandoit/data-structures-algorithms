@@ -44,7 +44,7 @@ describe("insertRecursively", function() {
   });
 });
 
-describe.skip("find", function() {
+describe("find", function() {
   it("finds a node correctly", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
