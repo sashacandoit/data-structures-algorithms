@@ -157,7 +157,25 @@ class BinarySearchTree {
    * Return an array of visited nodes. */
 
   bfs() {
+    let node = this.root
+    let toVisitQueue = [];
+    let data = [];
 
+    toVisitQueue.push(node)
+
+    while (toVisitQueue.length) {
+      node = toVisitQueue.shift();
+      data.push(node.val);
+
+      if (node.left) {
+        toVisitQueue.push(node.left)
+      }
+
+      if (node.right) {
+        toVisitQueue.push(node.right)
+      }
+    }
+    return data;
   }
 
   /** Further Study!
