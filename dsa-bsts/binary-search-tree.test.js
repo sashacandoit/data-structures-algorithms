@@ -70,7 +70,7 @@ describe("find", function() {
   });
 });
 
-describe.skip("findRecursively", function() {
+describe("findRecursively", function() {
   it("finds a node correctly", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
