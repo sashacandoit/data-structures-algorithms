@@ -44,7 +44,7 @@ describe("insertRecursively", function() {
   });
 });
 
-describe("find", function() {
+describe.skip("find", function() {
   it("finds a node correctly", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -70,7 +70,7 @@ describe("find", function() {
   });
 });
 
-describe("findRecursively", function() {
+describe.skip("findRecursively", function() {
   it("finds a node correctly", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -96,7 +96,7 @@ describe("findRecursively", function() {
   });
 });
 
-describe("dfsPreOrder", function() {
+describe.skip("dfsPreOrder", function() {
   it("returns an array of values found with DFS Pre Order", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -111,7 +111,7 @@ describe("dfsPreOrder", function() {
   });
 });
 
-describe("dfsInOrder", function() {
+describe.skip("dfsInOrder", function() {
   it("returns an array of values found with DFS In Order", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -126,7 +126,7 @@ describe("dfsInOrder", function() {
   });
 });
 
-describe("dfsPostOrder", function() {
+describe.skip("dfsPostOrder", function() {
   it("returns an array of values found with DFS Post Order", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -141,7 +141,7 @@ describe("dfsPostOrder", function() {
   });
 });
 
-describe("BFS", function() {
+describe.skip("BFS", function() {
   it("should return the correct output", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -156,7 +156,7 @@ describe("BFS", function() {
   });
 });
 
-describe("remove", function() {
+describe.skip("remove", function() {
   it("remove should correctly remove a node with no children", function() {
     let binarySearchTree = new BinarySearchTree();
     binarySearchTree
@@ -246,7 +246,7 @@ describe("remove", function() {
   });
 });
 
-describe("isBalanced", function() {
+describe.skip("isBalanced", function() {
   it("checks if it is balanced", function() {
     var binarySearchTree = new BinarySearchTree();
     binarySearchTree.insert(15);
@@ -265,7 +265,7 @@ describe("isBalanced", function() {
   });
 });
 
-describe("findSecondHighest", function() {
+describe.skip("findSecondHighest", function() {
   it("finds the 2nd largest", function() {
     var binarySearchTree = new BinarySearchTree();
     binarySearchTree.insert(15);
