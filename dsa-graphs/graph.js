@@ -70,7 +70,26 @@ class Graph {
 
   // this function returns an array of Node values using BFS
   breadthFirstSearch(start) {
+    //keep track of the nodes we need to visit next
+    let toVisitQueue = [start];
 
+    //keep track of the people we've already seen
+    let seen = new Set(toVisitQueue);
+    let result = [];
+
+    while (toVisitQueue.length > 0) {
+      //grab a node out of the stack
+      let currNode = toVisitQueue.shift();
+      result.push(currNode.value);
+
+      currNode.adjacent.forEach(neighbor => {
+        if (!seen.has(neighbor)) {
+          toVisitQueue.push(neighbor);
+          seen.add(neighbor);
+        }
+      })
+    }
+    return result;
   }
 }
 
