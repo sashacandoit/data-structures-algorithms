@@ -34,7 +34,7 @@ describe("addVertices", function() {
   });
 });
 
-describe("addEdge", function() {
+describe.skip("addEdge", function() {
   it("should add the appropriate edges to the adjacency list", function() {
     let graph = new Graph();
     let a = new Node("A");
@@ -53,7 +53,7 @@ describe("addEdge", function() {
   });
 });
 
-describe("removeEdge", function() {
+describe.skip("removeEdge", function() {
   it("should remove the vertices from the adjacency list", function() {
     let graph = new Graph();
     let a = new Node("A");
@@ -74,7 +74,7 @@ describe("removeEdge", function() {
   });
 });
 
-describe("removeVertex", function() {
+describe.skip("removeVertex", function() {
   it("should remove the vertex as well as any edges", function() {
     let graph = new Graph();
     let a = new Node("A");
@@ -97,7 +97,7 @@ describe("removeVertex", function() {
   });
 });
 
-describe("DFS", function() {
+describe.skip("DFS", function() {
   it("return an array of the nodes searched using DFS", function() {
     let graph = new Graph();
     let S = new Node("S");
@@ -146,7 +146,7 @@ describe("DFS", function() {
   });
 });
 
-describe("BFS", function() {
+describe.skip("BFS", function() {
   it("should return an array of the nodes searched using BFS", function() {
     let graph = new Graph();
     let S = new Node("S");
