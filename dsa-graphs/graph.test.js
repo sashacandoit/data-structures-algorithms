@@ -74,7 +74,7 @@ describe("removeEdge", function() {
   });
 });
 
-describe.skip("removeVertex", function() {
+describe("removeVertex", function() {
   it("should remove the vertex as well as any edges", function() {
     let graph = new Graph();
     let a = new Node("A");
