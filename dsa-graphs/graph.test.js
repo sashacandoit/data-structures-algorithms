@@ -34,7 +34,7 @@ describe("addVertices", function() {
   });
 });
 
-describe.skip("addEdge", function() {
+describe("addEdge", function() {
   it("should add the appropriate edges to the adjacency list", function() {
     let graph = new Graph();
     let a = new Node("A");
