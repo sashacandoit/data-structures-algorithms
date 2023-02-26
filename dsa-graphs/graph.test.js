@@ -53,7 +53,7 @@ describe("addEdge", function() {
   });
 });
 
-describe.skip("removeEdge", function() {
+describe("removeEdge", function() {
   it("should remove the vertices from the adjacency list", function() {
     let graph = new Graph();
     let a = new Node("A");
