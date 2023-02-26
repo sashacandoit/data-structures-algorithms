@@ -97,7 +97,7 @@ describe("removeVertex", function() {
   });
 });
 
-describe.skip("DFS", function() {
+describe("DFS", function() {
   it("return an array of the nodes searched using DFS", function() {
     let graph = new Graph();
     let S = new Node("S");
